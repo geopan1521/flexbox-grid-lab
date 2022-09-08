@@ -1,0 +1,115 @@
+html {
+    box-sizing: border-box
+  }
+  
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+  }
+  
+  /* resets font size to be 62.5% of the user preference - 
+     in most browser configurations this will be 10px */
+  :root {
+    font-size: 62.5%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+  /* Use a system font, if none are available use an available sans-sarif   font */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    margin: 0;
+  }
+  h1 {
+    font-size: 12px;
+    text-align: center;
+  }  
+  
+  
+    main {
+    flex-direction: column;
+    height: 300px;
+    width: 150px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+    img {
+    height: 100px;
+    width: 75px;
+    border-radius: 80%;
+    border: 3px solid greenyellow;
+    
+}
+
+#occupation {
+    background-color: rgba(213, 210, 210, 0.739);
+    justify-content: center;
+    align-items: stretch;
+    padding:  4px 0;
+}
+
+#contact {
+    background-color: rgb(151, 240, 151);
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    height: 60px;
+    width: 50%;
+    align-items: center;
+}
+    
+#brand {
+   display: none;
+    /* overflow-wrap: break-word; */
+}   
+
+#offer {
+    justify-content: center;
+    align-items: stretch;
+    
+}
+
+#status {
+    justify-content: flex-end;
+    display: flex;
+    padding: 8px 8px 0 0;
+    width: 100%;
+}
+
+section {
+    justify-content: center;
+    align-items: stretch;
+}
+
+p {
+    margin: 4px 0;
+}
+
+#contact > p:last-child {
+    background-color: green;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        width: 400px;
+    }
+}
+
+
+
+  
+  
