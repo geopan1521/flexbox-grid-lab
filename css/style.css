@@ -53,20 +53,25 @@ html {
 
 #occupation {
     background-color: rgba(213, 210, 210, 0.739);
-    justify-content: center;
-    align-items: stretch;
+    width: 100%;
+    text-align: center;
+    /* justify-items: center; */
     padding:  4px 0;
+    /* align-items: center; */
 }
+
 
 #contact {
     background-color: rgb(151, 240, 151);
     flex-direction: row;
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    justify-content: space-evenly;
+    
+    /* gap: 100px; */
     height: 60px;
-    width: 50%;
-    align-items: center;
+    width: 100%;
+    /* align-items: center; */
+
 }
     
 #brand {
@@ -92,24 +97,27 @@ section {
     align-items: stretch;
 }
 
-p {
+/* p {
     margin: 4px 0;
-}
+
+} */
 
 #contact > p:last-child {
     background-color: green;
     margin: 0;
     height: 100%;
-    width: 100%;
+    width: 50%;
+    text-align: center;
+    
 }
 
-@media only screen and (min-width: 768px) {
-    main {
-        width: 400px;
-    }
+#contact > p:first-child {
+    width: 50%;
+    margin: 0;
+    height: 100%;
+    text-align: center;
 }
 
-
-
-  
-  
+@media only screen and (min-width: 600px) {
+    
+}
