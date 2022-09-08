@@ -45,8 +45,8 @@ html {
 
     img {
     height: 100px;
-    width: 75px;
-    border-radius: 80%;
+    width: 100px;
+    border-radius: 90%;
     border: 3px solid greenyellow;
     
 }
@@ -119,5 +119,75 @@ section {
 }
 
 @media only screen and (min-width: 600px) {
+    main {
+        display: grid;
+        text-align: left;
+        width: 550px;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto auto auto auto;
+        /* justify-content: center; */
+        grid-template-areas: 
+          "status name"
+          "img occupation"
+          "img brand" 
+          "contact offer";
+      }
     
-}
+      #status {
+        text-align: left;
+        padding: 10px 0 0 20px;
+        justify-content: left;
+      }
+    
+      img {
+        grid-area: img;
+        margin: 0 auto;
+      }
+    
+      #brand {
+        display: inline;
+        
+      }
+    
+      #contact {
+        grid-area: contact;
+        height: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        
+        
+      }
+    
+    
+      #brand > p {
+        border-left: green 4px solid;
+        /* padding: 0 20px 0 8px; */
+        font-size: 1.6rem;
+        }
+    
+        #offer {
+            font-size: 1.4rem;
+            padding: 10px;
+            }
+        
+            #name, #occupation, #brand, #offer {
+            font-size: medium;
+            padding-left: 20px;
+            background-color: lightgray;
+            height: 100%;
+            }
+
+            #contact > p {
+                text-align: center;
+                justify-content: center;
+                flex-direction: row;
+                background-color: lightgreen;
+                display: flex;
+                align-items: center;
+
+                
+            }
+
+            /* #co */
+        }
